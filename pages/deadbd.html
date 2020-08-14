@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+ <html>
+   <head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" href="https://markwhinkle.weebly.com/uploads/1/3/0/3/130332965/dg1-updated_orig.png">
+     <script src="./js/games.js"></script>
+     <script src="./php/contact-form-handler.php"></script>
+	   <style type="text/css" media="all">@import "css/main.css";</style>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <title>Developing Games</title>
+   </head>
+
+<body>
+  <div class="parallax">
+    <div id="banner"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="content">
+<!--========================================================================================-->
+      <!-- Top navigation -->
+      <div class="topnav">
+
+        <!-- Left-aligned links (default) -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Us</a>
+
+        <!-- Right-aligned links -->
+        <div class="search-container">
+        <form action="/games.js">
+          <input type="text" placeholder="Search Games.." name="#search" id="myInput" onkeyup="filterFunction()" onfocus="myFunction()">
+        </form>
+
+        </div>
+
+      </div>
+
+<!--========================================================================================-->
+      <!--THIS IS THE LIST OF LINKS TO THE GAMES AREA-->
+      <div id="myDropdown" class="dropdown-content">
+        <a href="animal_crossing.html">Animal Crossing New Horizons</a>
+        <a href="deadbd.html">Dead by Daylight</a>
+        <a href="doom_review.html">Doom (2016)</a>
+        <a href="friday13.html">Friday the 13th</a>
+        <a href="sword_shield.html">Pokemon Sword and Shield</a>
+        <a href="stardew.html">Stardew Valley</a>
+      </div>
+<!--========================================================================================-->
+
+      <div class="row">
+
+        <div class="leftcolumn">
+          <div class="card focus">
+            <img class="rc_resize" src="images/dead.jpg" alt="doom horde logo">
+          </div>
+        </div>
+
+        <div class="rightcolumn">
+          <div class="card borderfocus">
+            <h1 class="scoresize">OUR SCORE</h1>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="card borderfocus">
+            <h3>Pros:</h3>
+            <ul>
+              <li>Very Scary Game Atmosphere</li>
+              <li>Challenging Matches</li>
+              <li>Sound and graphics design</li>
+            </ul>
+            <h3>Cons:</h3>
+            <ul>
+              <li>Poor Killer Design</li>
+              <li>Repetitive Gameplay</li>
+            </ul>
+            <a href="#comments"><h3>Comments</h3></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="card borderfocus">
+          <h2>Dead by Daylight Review</h2>
+          <h5>Travis, Apr 30, 2020</h5>
+
+          <p>Dead by Daylight is a strategic horror game that you have to work as a team and use your skills to help you survive or hunt. You can play as the survivors or you can play as the killers. When you play as survivors, your goal is to try and escape by doing all five of the generators and open the exit gates and leave. When you play killer, your goal is to interrupt those survivors from completing the generators and sacrifice those survivors to the entity. There are a wide selection of killers and survivors, some even from famous horror movies like the Halloween movie and Nightmare on Elm Street movie. The best way I can describe this game in how I look at it is that it’s bad sometimes but it’s also really good other times, it’s also really damn addictive. Both sides have a lot of power when they want to, which can make the game be over in like a few minutes which is not fun at all. Besides that, this game is really fun, I got it like probably almost a year ago and I have about 1292 hours in it, so that shows how addictive the game can be. Give the game a try, it’s not very expensive at the moment and you never know, you might actually enjoy it like how I do.</p>
+
+		  </div>
+      </div>
+      <hr>
+<!--========================================================================================-->
+      <a id="comments"></a>
+      <!-- begin wwww.htmlcommentbox.com -->
+      <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+      <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+      <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24r1i7J5tDVIiRRDOqgu6K.0"+"&opts=16862&num=10&ts=1588111633338");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/
+      </script>
+      <!-- end www.htmlcommentbox.com -->
+<!--========================================================================================-->
+
+    </div>
+  </div>
+
+<!--========================================================================================-->
+
+<!--THIS IS THE FORMATTING FOR THE MODAL POP_UP-->
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/contact-form-handler.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h1>Contact Us!</h1>
+      </div>
+
+      <div class="container_text">
+
+      <input name="fname" type="text" class="form-control" placeholder="Enter First Name" required>
+      <br>
+
+      <input name="lname" type="text" class="form-control" placeholder="Enter Last Name" required>
+      <br>
+
+      <input name="locate" type="text" class="form-control" placeholder="Where are you from (Optional)">
+      <br>
+
+      <input name="email" type="email" class="form-control" placeholder="Enter Email" required>
+      <br>
+      <textarea name="message" class="form-control" placeholder="Message for us." row="2" required></textarea>
+      <br>
+      <button type="submit" value="SEND MESSAGE" >Submit</button>
+
+      </div>
+
+        <div class="container_text" id="lowermod">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>

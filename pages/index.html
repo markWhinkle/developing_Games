@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+ <html>
+   <head>
+     <link rel="icon" href="https://markwhinkle.weebly.com/uploads/1/3/0/3/130332965/dg1-updated_orig.png">
+     <script src="./js/games.js"></script>
+     <script src="./php/contact-form-handler.php"></script>
+	   <style type="text/css" media="all">@import "css/main.css";</style>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <title>Developing Games</title>
+   </head>
+
+   <body>
+     <div class="parallax">
+       <div id="banner"></div>
+     </div>
+
+
+     <div class="container">
+       <div class="content">
+<!--========================================================================================-->
+         <!-- Top navigation -->
+         <div class="topnav">
+
+           <!-- Left-aligned links (default) -->
+           <a href="index.html" class="active">Home</a>
+           <a href="about.html">About</a>
+           <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Us</a>
+
+           <!-- Right-aligned links -->
+           <div class="search-container">
+           <form action="/games.js">
+             <input type="text" placeholder="Search Games.." name="#search" id="myInput" onkeyup="filterFunction()" onfocus="myFunction()">
+            </form>
+
+            </div>
+
+         </div>
+
+<!--========================================================================================-->
+<!--THIS IS THE LIST OF LINKS TO THE GAMES AREA-->
+  <div id="myDropdown" class="dropdown-content">
+    <a href="animal_crossing.html">Animal Crossing New Horizons</a>
+    <a href="deadbd.html">Dead by Daylight</a>
+    <a href="doom_review.html">Doom (2016)</a>
+    <a href="friday13.html">Friday the 13th</a>
+    <a href="sword_shield.html">Pokemon Sword and Shield</a>
+    <a href="stardew.html">Stardew Valley</a>
+  </div>
+
+<!--========================================================================================-->
+
+    <div class="row">
+      <!--LEFT COLUMN-->
+      <div class="leftcolumn">
+        <div class="card borderfocus">
+          <h2>Nintendo Switch Users Experience Account Compromise</h2>
+          <h5>Over 160,000 NNID accounts get compromised on Nintendo Switch Accounts, April 25, 2020</h5>
+          <div><img class="rc_resize" src="images/nintendonetwork.jpg" alt="Nintendo_Network_Logo"></div>
+          <p>Be wary when using older login services.</p>
+          <p>Nintendo gets rid of the Nintendo Network ID (NNID) feature for users of their products after a recent report of unauthorized hacking through a security breach. Hackers would access user login data through their NNID and make unauthorized purchases on various accounts, with 160,000 confirmed cases thus far. Due to the NNID being an older form of login service, Nintendo is temporarily shutting down logins through the service that do not use a two-factor authentication system. Nintendo confirms various pieces of information revolving around topic, dealing with visibility of credit card information, personal information, and alternate forms of Nintendo login services.</p>
+          </div>
+          <div class="card borderfocus">
+            <h2>PlayStation 5 Launch Details</h2>
+
+        <div><img class="rc_resize" src="images/sony_pic.jpg" alt="Sony_Reveal"></div>
+
+            <h5>New hardware specs revealed, price speculated higher than previous consoles, Apr 30, 2020</h5>
+
+            <p>With the release of next generation consoles coming in the winter of 2020, the expectations of Sony's latest iteration are high.</p>
+            <p>PlayStation has announced the hardwars specs on their newest console to be released. With a high-speed solid state drive, custom AMD GPU with ray tracing capabilities, and new capabilites that require less time to load games from previous save states, the PS5 certainly has a lot to live up to. 3D audio and the support of 4K resolution across multiple platforms are also available, making this console a powerhouse. Of couse, it does have quite the competition it's squaring off agains. The Xbox Series X, which is set to be released at the same time with similar specs, does have its own qualities to brag about. Overall, the price of Sony's console is estimated to cost about $500, while its competitor is expected to have the same price as well, though some sources have stated they hope to keep the expense lower. We will have to wait and see which console wins this time around considering both companies have some exciting new hardware and exclusive games available to both Sony and Microsoft.</p>
+            </div>
+
+      </div>
+      <!--END OF LEFT COLUMN-->
+
+      <!--RIGHT COLUMN-->
+      <div class="rightcolumn">
+
+        <div class="card focus">
+          <h3>Upcoming Releases</h3>
+          <div><a href="https://www.nintendo.com/games/detail/xenoblade-chronicles-definitive-edition-switch/">
+            <img class="rc_resize" src="images/Xeno_Def.jpg" alt="Xenoblade_DefEd"></img>
+            </a></div>
+          <div><a href="https://www.playstation.com/en-us/games/the-last-of-us-part-ii-ps4/">
+            <img class="rc_resize" src="images/Last_of_us_2_g.gif" alt="Last_Of_Us_Pt2"></img>
+            </a></div>
+          <div><a href="https://www.cyberpunk.net/us/en/pre-order">
+            <img class="rc_resize" src="images/cyberpunk_g.gif" alt="Cyberpunk_2077"></img>
+            </a></div>
+        </div>
+
+
+
+
+      </div>
+      <!--END OF RIGHT COLUMN-->
+    </div>
+
+<!--========================================================================================-->
+
+    </div>
+  </div>
+
+<!--========================================================================================-->
+<!--THIS IS THE FORMATTING FOR THE MODAL POP_UP-->
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="./php/contact-form-handler.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Contact Us!</h1>
+    </div>
+
+    <div class="container_text">
+
+      <input name="fname" type="text" class="form-control" placeholder="Enter First Name" required>
+      <br>
+
+      <input name="lname" type="text" class="form-control" placeholder="Enter Last Name" required>
+      <br>
+
+      <input name="locate" type="text" class="form-control" placeholder="Where are you from (Optional)">
+      <br>
+
+      <input name="email" type="email" class="form-control" placeholder="Enter Email" required>
+      <br>
+      <textarea name="message" class="form-control" placeholder="Message for us." row="2" required></textarea>
+      <br>
+      <button type="submit" value="SEND MESSAGE">Submit</button>
+
+    </div>
+
+    <div class="container_text" id="lowermod">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+<!--========================================================================================-->
+   </body>
+ </html>

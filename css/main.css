@@ -1,0 +1,457 @@
+html,
+body {
+  height: 100%;
+  background-image: linear-gradient(-90deg,#4F3961,#3B284B,#4F3961);
+
+}
+
+/* Centers Content */
+.container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This is the content within the container */
+.content {
+  background-color: #F3D4D4;
+  width: 70%;
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(#F99498, #EB728C);
+  /* Set a specific height */
+  min-height: 200px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+#banner{
+  background-image: url('https://markwhinkle.weebly.com/uploads/1/3/0/3/130332965/dg1-updated_orig.png');
+  background-position: top center;
+  background-attachment: fixed;
+  /* Set a specific height */
+  min-height: 225px;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+h1,h2 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24pt;
+  color: #4E3461;
+}
+
+h3,h4,h5 {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #4E3461;
+}
+
+p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18pt;
+	text-align: left;
+	color: #4E3461;
+}
+
+.p2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18pt;
+	color: #4E3461;
+}
+
+ li {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 10pt;
+   color: #4E3461;
+ }
+
+/*=============================================================================*/
+/*COLUMN CSS FOR INSIDE THE INNER CONTENT AREA*/
+
+.scoresize{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24pt;
+  color: #4E3461;
+}
+.checked {
+  color: orange;
+}
+
+.right{
+  text-align: right;
+}
+
+.center{
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 78%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  padding-left: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: auto;
+  padding: 2%;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.focus{
+  background-color: #FC9D9D;
+}
+
+.borderfocus{
+  border-top: 2px solid #FC9D9D;
+  border-bottom: 2px solid #FC9D9D;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(#F3D4D4, #F89399) ;
+  margin-top: 20px;
+  width: auto;
+}
+
+
+/*=============================================================================*/
+/*TOP NAV CSS*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: #F89399;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #EA728C;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FC9D9D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav .search-container {
+  float: right;
+  padding-right: 20px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #F89399;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display: block;}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+  padding-right: 10px;
+}
+
+.topnav .search-container button:hover {
+  background: #EA728C;
+}
+
+/*=============================================================================*/
+/*IMAGE RELATED CSS*/
+
+.rc_resize{
+  width: 99%;
+  height: auto;
+}
+
+#aboutimage {
+	width: 195.5px;
+	height: 260.75px;
+
+}
+#aboutimage2 {
+	width: 260.75px;
+	height: 260.75px;
+}
+#aboutimage3 {
+	width: 130px;
+	height: 240px;
+}
+
+/*=============================================================================*/
+/*THIS IS THE CSS FOR THE MODAL POP UP*/
+
+/* Full-width input fields */
+
+/* Set a style for all buttons */
+button {
+  background-color: #EA728C;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+form {
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  margin-top: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container_text {
+  padding: 16px;
+}
+
+#lowermod {
+  background-color:#FC9D9D;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #F3D4D4;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid  #f2f2f2;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+/*=============================================================================*/
+/*RESPONSIVE CSS*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 880px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*=============================================================================*/
+#HCB_comment_box .submit {
+    background:none; /* Clear twitter bootstrap style. */
+    background-color:#EA728C;
+    border:1px solid pink;
+    color: white;
+  }
+
+  #HCB_comment_box #hcb_form_content,
+          #HCB_comment_box #hcb_form_email,
+          #HCB_comment_box #hcb_form_name,
+          #HCB_comment_box #hcb_form_website {
+            background-color:#ffd;
+          }
